@@ -17,7 +17,7 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringRunner.class)
 // 配置文件需要包含spring mvc的配置文件
 @ContextConfiguration(locations = {"classpath:/spring/*"})
-@WebAppConfiguration(value = "src/main/web")
+@WebAppConfiguration()
 public class XmlWebApplicationTest {
     @Autowired
     protected WebApplicationContext context;
